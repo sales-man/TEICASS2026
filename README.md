@@ -29,11 +29,11 @@ Foram testados quatro algoritmos de aprendizado de máquina com otimização rig
 ## 📁 Estrutura do Repositório
 
 ```text
-├── aulas/                  <-- Materiais utilizados em aula
-├── projeto/                <-- Conjunto de todo o material usado para elaborar o trabalho de conclusão da disciplina
-│   ├── artigo/             <-- Raiz de tudo que foi usado para elaborar o artigo
+├── aulas/                       <-- Materiais utilizados em aula
+├── projeto/                     <-- Conjunto de todo o material usado para elaborar o trabalho de conclusão da disciplina
+│   ├── artigo/                  <-- Raiz de tudo que foi usado para elaborar o artigo
 │   │   ├── ArtigoTEICASS_TeX/   <-- Projeto LaTeX do artigo
-│   │   └── cap#1#2#3#4/    <-- Materiais organizados de acordo com o conteúdo abordado em cada Capítulo/Secção
-│   ├── dataset/            <-- Dataset original utilizado na confecção do trabalho (Sgandurra, 2016)
-│   └── dataset_tratamento/ <-- Tratamento preliminar do dataset para poder ser utilizado pelos códigos desenvolvidos
+│   │   └── cap#1#2#3#4/         <-- Materiais organizados de acordo com o conteúdo abordado em cada Capítulo/Secção
+│   ├── dataset/                 <-- Dataset original utilizado na confecção do trabalho (Sgandurra, 2016)
+│   └── dataset_tratamento/      <-- Tratamento preliminar do dataset para poder ser utilizado pelos códigos desenvolvidos
 └── README.md
