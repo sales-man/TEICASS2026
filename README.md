@@ -1,6 +1,7 @@
 # Treinamento de Modelos de Machine Learning para Detecção de Ransomware Baseado em Dataset Público - Um Estudo de Caso de 4 Modelos
 
 Este repositório contém o projeto completo de pesquisa focado no treinamento de modelos de Machine Learning para detecção de ransomware através de análise de logs de eventos, desenvolvido como trabalho de conclusão da disciplina Tópicos Especiais em Inteligência Computacional Aplicada à Segurança de Sistemas, ministrada em 2026, como parte do Programa de Pós-graduação em Computação Aplicada (PPCA), vinculado ao Núcleo de Desenvolvimento Amazônico em Engenharia (NDAE), da Universidade Federal do Pará (UFPA).
+
 O trabalho aborda desde o processamento de dados comportamentais até a explicabilidade dos modelos.
 
 ## 📌 Visão Geral
@@ -12,7 +13,8 @@ Este trabalho apresenta um estudo de caso focado no treinamento e avaliação de
 ## 📄 Trabalho Final (Artigo Científico)
 
 O artigo científico completo desenvolvido ao longo da disciplina, detalhando toda a fundamentação teórica, metodologia de análise dinâmica e discussão dos resultados, está disponível diretamente no caminho:
-* 👉 https://github.com/sales-man/TEICASS2026/blob/main/projeto/artigo/ArtigoTEICASS.pdf
+
+👉 https://github.com/sales-man/TEICASS2026/blob/main/projeto/artigo/ArtigoTEICASS.pdf
 
 ---
 
