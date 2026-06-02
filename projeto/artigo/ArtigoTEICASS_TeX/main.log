@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.1)  1 JUN 2026 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.1)  2 JUN 2026 01:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -585,7 +585,7 @@ ine 62.
  [8 <./images/calcnativo_regressao.png>]
 [9 <./images/shap_lregression_beeswarm.png> <./images/shap_lregression_bdecisio
 n.png>]) (tex-secoes/6-conclusao.tex) (main.bbl [10]) [11]
-runsystem(latexminted cleantemp  --timestamp 20260601235828 FAD58DE7366495DB465
+runsystem(latexminted cleantemp  --timestamp 20260602011310 FAD58DE7366495DB465
 0CFEFAC2FCD61)...disabled (restricted).
 
  (main.aux)
@@ -596,7 +596,7 @@ L3 programming layer <2025-12-24>
  ) 
 Here is how much of TeX's memory you used:
  12545 strings out of 467871
- 272287 string characters out of 5428444
+ 272443 string characters out of 5428444
  842507 words of memory out of 5000000
  41189 multiletter control sequences out of 15000+600000
  645943 words of font info for 73 fonts, out of 8000000 for 9000
