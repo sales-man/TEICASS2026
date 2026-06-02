@@ -1,4 +1,3 @@
-```markdown
 # Treinamento de Modelos de Machine Learning para Detecção de Ransomware Baseado em Dataset Público — Um Estudo de Caso de 4 Modelos
 
 Este repositório contém o projeto completo de pesquisa focado na detecção de ransomware através de análise de modelos de Machine Learning. O trabalho aborda desde o processamento de dados comportamentais até a explicabilidade dos modelos.
