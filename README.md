@@ -6,6 +6,12 @@ Este repositório contém o projeto completo de pesquisa focado na detecção de
 
 Este trabalho apresenta um estudo de caso focado no treinamento e avaliação de quatro modelos de Machine Learning: **BernoulliNB, Random Forest, Logistic Regression e KNN**. Utilizando um dataset de análise dinâmica com 1.524 amostras (582 ransomware e 942 goodwares), a metodologia empregou a técnica de *Variance Threshold* para reduzir a alta dimensionalidade de 30.967 para 485 atributos binários essenciais, como chamadas de API e operações de registro. Os modelos foram otimizados via `GridSearchCV`, resultando em desempenhos superiores para a Regressão Logística e Random Forest, ambos com F1-score acima de 96%. Adicionalmente, o estudo explorou a interpretabilidade dos modelos através de coeficientes nativos e do framework **SHAP**, identificando padrões comportamentais decisivos para a classificação das ameaças.
 
+## 📄 Trabalho Final (Artigo Científico)
+
+O artigo científico completo desenvolvido ao longo desta disciplina, detalhando toda a fundamentação teórica, metodologia de análise dinâmica e discussão dos resultados, está disponível para leitura e download no link abaixo:
+
+👉 [**Acesso direto ao Artigo Completo (PDF)**](https://github.com/sales-man/TEICASS2026/blob/main/projeto/artigo/ArtigoTEICASS.pdf)
+
 ### 🌟 Destaques do Projeto
 * **Análise Dinâmica:** Uso de logs comportamentais (Cuckoo Sandbox) para evitar técnicas de evasão tradicionais baseadas em análise estática.
 * **Engenharia de Atributos:** Redução drástica de dimensionalidade de **30.967** para **485** atributos binários utilizando a técnica de *Variance Threshold*.
