@@ -12,7 +12,7 @@ O artigo científico completo desenvolvido ao longo desta disciplina, detalhando
 
 👉 [**Acesso direto ao Artigo Completo (PDF)**](https://github.com/sales-man/TEICASS2026/blob/main/projeto/artigo/ArtigoTEICASS.pdf)
 
-### 🌟 Destaques do Projeto
+## 🌟 Destaques do Projeto
 * **Análise Dinâmica:** Uso de logs comportamentais (Cuckoo Sandbox) para evitar técnicas de evasão tradicionais baseadas em análise estática.
 * **Engenharia de Atributos:** Redução drástica de dimensionalidade de **30.967** para **485** atributos binários utilizando a técnica de *Variance Threshold*.
 * **Explicabilidade (XAI):** Implementação de análise interpretável via **SHAP** (*SHapley Additive exPlanations*) e coeficientes de regressão para auditar as decisões tomadas pelos modelos.
