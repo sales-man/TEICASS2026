@@ -13,8 +13,7 @@ Este trabalho apresenta um estudo de caso focado no treinamento e avaliação de
 
 O artigo científico completo desenvolvido ao longo da disciplina, detalhando toda a fundamentação teórica, metodologia de análise dinâmica e discussão dos resultados, está disponível diretamente no caminho:
 
-👉 (https://github.com/sales-man/TEICASS2026/blob/main/projeto/artigo/ArtigoTEICASS.pdf)
-[**Acesso direto ao Artigo Completo (PDF)**]
+👉 https://github.com/sales-man/TEICASS2026/blob/main/projeto/artigo/ArtigoTEICASS.pdf
 
 ---
 
