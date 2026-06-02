@@ -1,6 +1,6 @@
 # Treinamento de Modelos de Machine Learning para Detecção de Ransomware Baseado em Dataset Público — Um Estudo de Caso de 4 Modelos
 
-Este repositório contém o projeto completo de pesquisa focado na detecção de ransomware através de análise de modelos de Machine Learning, desenvolvido como trabalho de conclusão da disciplina Tópicos Especiais em Inteligência Computacional Aplicada à Segurança de Sistemas.
+Este repositório contém o projeto completo de pesquisa focado na detecção de ransomware através de análise de modelos de Machine Learning, desenvolvido como trabalho de conclusão da disciplina Tópicos Especiais em Inteligência Computacional Aplicada à Segurança de Sistemas, ministrada em 2026, como parte do Programa de Pós-graduação em Computação Aplicada (PPCA), vinculado ao Núcleo de Desenvolvimento Amazônico em Engenharia (NDAE), da Universidade Federal do Pará (UFPA).
 O trabalho aborda desde o processamento de dados comportamentais até a explicabilidade dos modelos.
 
 ## 📌 Visão Geral
