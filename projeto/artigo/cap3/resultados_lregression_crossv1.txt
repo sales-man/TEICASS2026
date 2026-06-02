@@ -1,0 +1,8 @@
+
+===== Resultados: Logistic Regression =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  97.64% | +/- 0.23%
+Precisao     |  97.64% | +/- 0.32%
+Recall       |  96.15% | +/- 0.48%
+F1           |  96.88% | +/- 0.31%

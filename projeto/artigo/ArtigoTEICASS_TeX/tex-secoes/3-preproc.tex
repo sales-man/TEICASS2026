@@ -1,0 +1,30 @@
+
+\section{Pre-Processamento} \label{sec:preproc}
+
+Este capítulo detalha as etapas de preparação do conjunto de dados, abordando a limpeza de dados, a seleção de atributos e a fundamentação teórica que sustenta as escolhas técnicas realizadas para otimizar o treinamento dos modelos de detecção de ransomware.
+
+\subsection{Limpeza de Dados e Seleção de Atributos via Variance Threshold} \label{subsec:limpezadados}
+
+O conjunto de dados original apresentava uma alta dimensionalidade, com um total de 30.967 atributos comportamentais. No entanto, observou-se que a vasta maioria desses atributos (98,46\%) possuía uma baixíssima densidade de informação, apresentando entre 0 e 50 eventos em um universo de 1.524 amostras. Para reduzir este problema de esparsidade e minimizar o custo computacional, aplicou-se a técnica de seleção de atributos \textit{Variance Threshold (VT)}.
+
+O VT é um método do tipo filtro não supervisionado que remove recursos cuja variância não atinge um limite especificado \cite{kuhn2013applied}. Dado que o \textit{dataset} é composto por variáveis binárias (booleanas), a variância é calculada com base no ensaio de Bernoulli, conforme a Equação ~\ref{eq:variancia}:
+\begin{equation} \label{eq:variancia} 
+	Var[X] = p(1 - p) 
+\end{equation}
+\begin{center}
+	\textbf{Equação para o cálculo da variância}.
+\end{center}
+
+Onde $p$ representa a probabilidade de sucesso (parâmetro de probabilidade de Bernoulli), que define o percentual do limite de corte \cite{scikit-learn}. Neste trabalho, utilizou-se um limite de variância de 97\% ($p = 0.97$). Na prática, isso resultou na exclusão de todas as colunas onde o mesmo valor (0 ou 1) se repetia em mais de 97\% das amostras, ou seja, atributos com 45 ou menos ocorrências de um dos valores foram descartados por não serem considerados cruciais. Esta etapa reduziu drasticamente o número de atributos de 30.923 para 485, permitindo uma análise mais focada em características realmente discriminantes.
+
+\subsection{Normalização e Mapeamento de Atributos} \label{subsec:normalizacao}
+
+Quanto à normalização, o conjunto de dados já se encontrava modelado em formato binário, onde o valor '1' indica a presença de uma operação ou evento e '0' indica sua ausência. Devido a essa natureza booleana intrínseca, não foi necessária a aplicação de técnicas de reescalonamento numérico adicionais.
+
+Uma tarefa essencial de pré-processamento foi a atribuição de nomes às \textit{features}. Como o \textit{dataset} público original não possuía cabeçalhos nas colunas, foi realizado o mapeamento técnico de cada atributo utilizando um arquivo de metadados separado. Esta ação foi fundamental para garantir a interpretabilidade dos resultados, permitindo identificar quais chamadas de API ou operações de registro são mais frequentes em amostras de ransomware em comparação a \textit{goodwares}.
+
+\subsection{Fundamentação Teórica} \label{subsec:fundamentacao}
+
+A escolha pelo \textit{Variance Threshold} justifica-se por ser uma abordagem não supervisionada de filtro. Diferente de métodos supervisionados, o VT pode ser aplicado ao conjunto de dados global antes da estratégia de validação cruzada (\textit{Cross-validation}), garantindo que os mesmos atributos sejam mantidos em todas as iterações de treino e teste sem o risco de \textit{overfitting} \cite{james2013introduction}. Além disso, como um método de filtragem, o VT preserva o significado original das variáveis, o que é vital para a análise comportamental de \textit{malwares} \cite{scikit-learn}. 
+
+A literatura de aprendizado de máquina sustenta que o uso de distribuições de Bernoulli para o cálculo de variância em dados binários é a abordagem estatística correta para identificar recursos com baixa variabilidade \cite{hastie2009elements}. Estudos anteriores utilizando este mesmo \textit{dataset} demonstraram que a redução de dimensionalidade para cerca de 400-500 atributos mantém ou até melhora a acurácia dos classificadores, validando a eficácia do limite de 97\% adotado \cite{sgandurra2016, caio2022}.

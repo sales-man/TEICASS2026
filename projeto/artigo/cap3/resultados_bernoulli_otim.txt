@@ -1,0 +1,16 @@
+
+===== Resultados: BernoulliNB Hiperparametros Otim =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  82.09% | +/- 0.57%
+Precisao     |  71.77% | +/- 0.78%
+Recall       |  87.80% | +/- 0.79%
+F1           |  78.94% | +/- 0.62%
+
+===== Resultados: BernoulliNB Hiperparametros Otim =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  82.09% | +/- 0.57%
+Precisao     |  71.77% | +/- 0.78%
+Recall       |  87.80% | +/- 0.79%
+F1           |  78.94% | +/- 0.62%

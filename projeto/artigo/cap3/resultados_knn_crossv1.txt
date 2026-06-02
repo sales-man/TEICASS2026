@@ -1,0 +1,8 @@
+
+===== Resultados: KNeighbors Classifier =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  94.09% | +/- 0.29%
+Precisao     |  92.21% | +/- 0.75%
+Recall       |  92.47% | +/- 0.70%
+F1           |  92.29% | +/- 0.37%

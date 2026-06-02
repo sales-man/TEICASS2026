@@ -1,0 +1,14 @@
+
+==================================================
+Iniciando ajuste de hiperparâmetros (GridSearchCV) para o Modelo...
+
+Otimização Concluída!
+Melhores parâmetros configurados: {'class_weight': None, 'criterion': 'entropy', 'max_depth': 20, 'n_estimators': 100}
+
+Desempenho do melhor modelo encontrado:
+ - Acurácia: 97.87%
+ - Precisão: 97.60%
+ - Recall:   96.82%
+ - F1-Score: 97.20%
+==================================================
+

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{minted}
+
+\sloppy
+
+\title{Treinamento de Modelos de Machine Learning para Detecção de Ransomware Baseado em Dataset Publico \\ Um Estudo de Caso de 4 Modelos}
+
+\author{João Vítor Santa Brígida da Silva \inst{1}}
+\address{
+Programa de Pós-Graduação em Computação Aplicada (PPCA) \\ Universidade Federal do Pará (UFPA) -- Tucuruí -- PA -- Brasil
+\email{joao.silva@castanhal.ufpa.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	
+	Ransomware detection is a critical challenge for cybersecurity, requiring solutions that identify threats in real-time based on behavior. This work presents a case study focused on the training and evaluation of four Machine Learning models: BernoulliNB, Random Forest, Logistic Regression, and KNN. Using a dynamic analysis dataset with 1,524 samples (582 ransomware and 942 goodware), the methodology employed the Variance Threshold technique to reduce high dimensionality from 30,967 to 485 essential binary attributes, such as API calls and registry operations. The models were optimized via GridSearchCV, resulting in superior performance for Logistic Regression and Random Forest, both achieving an \textbf{F1-score above 96\%}. Additionally, the study explored model interpretability through native coefficients and the SHAP framework, identifying decisive behavioral patterns for threat classification.
+\end{abstract}
+
+\begin{resumo} 
+	A detecção de ransomware representa um desafio crítico para a segurança cibernética, demandando soluções que identifiquem ameaças em tempo real com base em comportamento. Este trabalho apresenta um estudo de caso focado no treinamento e avaliação de quatro modelos de \textit{Machine Learning}: BernoulliNB, Random Forest, Logistic Regression e KNN. Utilizando um dataset de análise dinâmica com 1.524 amostras (582 ransomware e 942 \textit{goodwares}), a metodologia empregou a técnica de \textit{Variance Threshold} para reduzir a alta dimensionalidade de 30.967 para 485 atributos binários essenciais, como chamadas de API e operações de registro. Os modelos foram otimizados via \textit{GridSearchCV}, resultando em desempenhos superiores para a Regressão Logística e Random Forest, ambos com \textbf{F1-score acima de 96\%}. Adicionalmente, o estudo explorou a interpretabilidade dos modelos através de coeficientes nativos e do framework SHAP, identificando padrões comportamentais decisivos para a classificação das ameaças.
+\end{resumo}
+
+\input{tex-secoes/1-intro}
+\input{tex-secoes/2-metodo}
+\input{tex-secoes/3-preproc}
+\input{tex-secoes/4-treinamento}
+\input{tex-secoes/5-avaliacao}
+\input{tex-secoes/6-conclusao}
+
+
+\bibliographystyle{sbc}
+\bibliography{referencias}
+
+\end{document}

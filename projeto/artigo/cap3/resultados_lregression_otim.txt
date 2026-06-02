@@ -1,0 +1,8 @@
+
+===== Resultados: Logistic Regression Hiperparametros Otim =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  97.69% | +/- 0.23%
+Precisao     |  97.35% | +/- 0.37%
+Recall       |  96.60% | +/- 0.43%
+F1           |  96.96% | +/- 0.30%

@@ -1,0 +1,28 @@
+
+==================================================
+Iniciando ajuste de hiperparâmetros (GridSearchCV) para o Modelo...
+
+Otimização Concluída!
+Melhores parâmetros configurados: {'alpha': 0.001, 'binarize': None, 'fit_prior': False}
+
+Desempenho do melhor modelo encontrado:
+ - Acurácia: 82.09%
+ - Precisão: 71.77%
+ - Recall:   87.80%
+ - F1-Score: 78.94%
+==================================================
+
+
+==================================================
+Iniciando ajuste de hiperparâmetros (GridSearchCV) para o Modelo...
+
+Otimização Concluída!
+Melhores parâmetros configurados: {'alpha': 0.001, 'binarize': None, 'fit_prior': False}
+
+Desempenho do melhor modelo encontrado:
+ - Acurácia: 82.09%
+ - Precisão: 71.77%
+ - Recall:   87.80%
+ - F1-Score: 78.94%
+==================================================
+

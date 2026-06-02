@@ -1,0 +1,19 @@
+# Atividade 5 - Cap4 #
+### Interpretaçao dos resultados ###
+
+#1. Treine o melhor modelo encontrado nas atividades passadas, com os melhores hiperparâmetros:
+	Resposta: 
+		Modelo: Logistic Regression (Escolhido por ter resultados proximos ao Random Forest, e apresentar um desempenho de processamento consideravelmente melhor)
+		Parametros: C=1.0, max_iter=1000, penalty='l1', solver='saga'
+
+
+#2. Caso o modelo tenha o cálculo nativo da importância, apresente a lista das 30 melhores features e seus valores.
+	Resposta: Existe o Coeficientes Nativos da Regressão Logística. A Regressão Logística é um modelo linear. Isso significa que ela calcula uma equação matemática onde cada variável de entrada (feature) recebe um peso, que é o coeficiente.
+
+
+#3. De qualquer forma, implemente o SHAP para gerar os gráficos de influência/importância abaixo:
+	a) Grafico do Beeswarm: shap_lregression_beeswarm.svg
+	b) Grafico do Decision: shap_lregression_bdecision.svg
+	
+
+#4. Faça um texto (e incorpore no artigo) descrevendo cada gráfico.

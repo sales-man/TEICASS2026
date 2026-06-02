@@ -1,0 +1,13 @@
+# Atividade 3 - Cap2 #
+### Preprocessamento ###
+
+1. Utilizando o dataset escolhido, aplicar pelo menos as
+etapas de pré-processamento:
+	a. Limpeza de dados:
+		Resposta: Foi removido features que nao influenciavam tanto no modelo, com input de 97%, usando VT (VarianceThreshold) com p = 0.97 significa remover colunas onde o mesmo valor se repete em mais de 97% das amostras.
+	b. Normalização ou padronização de atributos numéricos:
+		Resposta: O dataset ja veio com todos os atributos modelados em 0 ou 1, o que foi feito foi atribuir o nome da feature a respectiva coluna do dataset, para facilitar a interpretaçao dos dados, pois as colunas do dataset nao possuiam cabeçalho, os nomes vinham em um arquivo separado.
+	c. A técnica escolhida para resolver e sua fundamentação teórica (citar referências):
+		Resposta: Kuhn and Johnson 2013
+	d. Escrever um texto para o capitulo do artigo, descrevendo as etapas de pré-processamento aplicadas.
+		VT (VarianceThreshold) com p = 97%

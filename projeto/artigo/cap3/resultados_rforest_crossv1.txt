@@ -1,0 +1,8 @@
+
+===== Resultados: Random Forest =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  97.64% | +/- 0.22%
+Precisao     |  97.39% | +/- 0.37%
+Recall       |  96.44% | +/- 0.52%
+F1           |  96.90% | +/- 0.29%

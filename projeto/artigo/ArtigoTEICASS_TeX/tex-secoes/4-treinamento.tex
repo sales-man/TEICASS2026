@@ -1,0 +1,53 @@
+
+\section{Treinamento dos Modelos de Machine Learning} \label{sec:treinamento}
+
+Este capítulo descreve o processo de treinamento e otimização dos modelos de \textit{Machine Learning} utilizados para a detecção de \textit{ransomware}. O objetivo principal é classificar o \textit{dataset} entre as categorias \textit{goodware} e \textit{malware}, empregando técnicas de aprendizado supervisionado utilizando  Python, com o auxílio da biblioteca \textit{Scikit-learn}.
+
+\subsection{Seleção de Modelos e Hiperparâmetros}
+
+Para este estudo, optou-se pela abordagem de \textbf{aprendizado supervisionado}, sendo selecionados quatro algoritmos classificadores distintos para avaliação:
+
+\begin{itemize}
+    \item \textbf{BernoulliNB:} Um classificador Naive Bayes adequado para dados discretos. Os hiperparâmetros pesquisados incluíram \textit{alpha}, \textit{binarize} e \textit{fit\_prior}.
+    \item \textbf{Random Forest:} Um método de aprendizado de conjunto (\textit{ensemble learning}). Foram analisados os parâmetros \textit{class\_weight}, \textit{criterion}, \textit{max\_depth} e \textit{n\_estimators}.
+    \item \textbf{Logistic Regression:} Utilizado para classificação linear. A pesquisa de hiperparâmetros focou em \textit{C}, \textit{max\_iter}, \textit{penalty} e \textit{solver}.
+    \item \textbf{KNeighborsClassifier (KNN):} Baseado na proximidade de vizinhos. Os parâmetros ajustados foram \textit{metric}, \textit{n\_neighbors} e \textit{weights}.
+\end{itemize}
+
+\subsection{Otimização com GridSearchCV} \label{subsec:grid}
+
+Para maximizar o desempenho dos modelos, especificamente a métrica \textbf{F1-score}, foi realizado o ajuste de hiperparâmetros utilizando a técnica de \textit{GridSearchCV} com validação cruzada, utilizando \textbf{Folds = 5} e \textbf{Repetições = 10}. Este processo permitiu identificar a melhor configuração para cada modelo, conforme detalhado na Tabela \ref{tab:melhores_parametros}.
+
+\begin{table}[htbp]
+\centering
+\caption{Melhores Hiperparâmetros Identificados via GridSearchCV}
+\label{tab:melhores_parametros}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Modelo} & \textbf{Melhores Parâmetros Configurativos} \\ \hline
+BernoulliNB & \{'alpha': 0.001, 'binarize': None, 'fit\_prior': False\} \\ \hline
+KNN & \{'metric': 'manhattan', 'n\_neighbors': 3, 'weights': 'distance'\} \\ \hline
+Logistic Regression & \{'C': 1.0, 'max\_iter': 1000, 'penalty': 'l1', 'solver': 'saga'\} \\ \hline
+Random Forest & \{'class\_weight': 'None', 'criterion': 'entropy', 'max\_depth': 20, 'n\_estimators': 100\} \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Resultados e Discussão} \label{subsec:resultados}
+
+Após a identificação dos melhores hiperparâmetros, os modelos foram reavaliados. A Tabela \ref{tab:comparativo_modelos} apresenta os resultados comparativos de desempenho, considerando as métricas de Acurácia, Precisão, \textit{Recall} e F1-score, acompanhadas de seus respectivos intervalos de confiança de 95\%.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Comparativo de Desempenho dos Modelos Otimizados}
+	\label{tab:comparativo_modelos}
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		\textbf{Modelo} & \textbf{Acurácia (\%)} & \textbf{Precisão (\%)} & \textbf{Recall (\%)} & \textbf{F1-score (\%)} \\ \hline
+		BernoulliNB & 82,09 $\pm$ 0,57 & 71,77 $\pm$ 0,78 & 87,80 $\pm$ 0,79 & 78,94 $\pm$ 0,62 \\ \hline
+		KNN & 95,58 $\pm$ 0,23 & 93,99 $\pm$ 0,62 & 94,57 $\pm$ 0,54 & 94,24 $\pm$ 0,29 \\ \hline
+		Logistic Regression & 97,69 $\pm$ 0,23 & 97,35 $\pm$ 0,37 & 96,60 $\pm$ 0,43 & 96,96 $\pm$ 0,30 \\ \hline
+		Random Forest & 97,82 $\pm$ 0,20 & 97,58 $\pm$ 0,36 & 96,70 $\pm$ 0,44 & 97,12 $\pm$ 0,26 \\ \hline
+	\end{tabular}
+\end{table}
+
+Os resultados demonstram que os modelos de \textbf{Logistic Regression} e \textbf{Random Forest} apresentaram os melhores desempenhos gerais, ambos superando a marca de 96\% em F1-score após a otimização. O modelo KNN também apresentou um desempenho sólido (92,59\% F1-score), enquanto o BernoulliNB, embora eficaz, obteve métricas inferiores aos demais classificadores testados.

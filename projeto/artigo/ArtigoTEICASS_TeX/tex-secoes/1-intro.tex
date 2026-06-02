@@ -1,0 +1,16 @@
+
+\section{Introdução} \label{sec:intro}
+
+A detecção de ameaças cibernéticas, especificamente o ransomware, representa um desafio crescente para a segurança da informação, exigindo métodos eficazes para identificar comportamentos maliciosos em tempo real. Este trabalho apresenta um estudo de caso sobre o treinamento de quatro modelos de Machine Learning voltados para a detecção de ransomware, fundamentado em um dataset público consolidado na literatura.
+
+A abordagem adotada prioriza a análise dinâmica, que consiste na execução de amostras em ambientes controlados, como o \cite{cuckoosandbox}. Diferente da análise estática, a análise dinâmica permite capturar o comportamento real do código em execução, mitigando técnicas de evasão comuns, como a ofuscação e a criptografia de binários. O dataset utilizado, disponibilizado por \cite{sgandurra2016}, compreende um total de 1.524 amostras, sendo 582 (38,19\%) de ransomware e 942 (61,81\%) de \textit{goodwares} (aplicações legítimas).
+
+Um aspecto central deste estudo é a engenharia de atributos, fundamentada em 30.967 características binárias que representam a presença ou ausência de ações específicas durante a execução. Esses atributos estão organizados em sete categorias comportamentais críticas:
+\begin{itemize}
+	\item \textbf{API}: Chamadas de sistema;
+	\item \textbf{REG}: Operações em chaves de registro do Windows;
+	\item \textbf{FILES e FILES EXT}: Operações e extensões de arquivos;
+	\item \textbf{DROP, DIR e STR}: Criação de arquivos, operações em diretórios e strings incorporadas.
+\end{itemize}
+
+O objetivo principal deste artigo é avaliar o desempenho dos algoritmos \textbf{BernoulliNB}, \textbf{Random Forest}, \textbf{Logistic Regression} e \textbf{KNN} na classificação dessas ameaças. Além da busca pela alta acurácia e otimização de hiperparâmetros via \textbf{GridSearchCV}, o trabalho dedica-se à interpretabilidade e explicabilidade dos modelos. Através de coeficientes nativos e do framework SHAP, busca-se compreender quais chamadas de API e operações de sistema são determinantes para a identificação de um ransomware.

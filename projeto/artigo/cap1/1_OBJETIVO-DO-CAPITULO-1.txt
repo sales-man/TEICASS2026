@@ -1,0 +1,29 @@
+Escreva um dos componentes do artigo final, a seção: Materiais e Métodos
+(parte inicial: Coleta de Dados).
+
+1. Escolha um tipo (logs, tráfego de rede, arquivos executáveis, eventos de execução):
+	Minha escolha: Eventos de execução.
+2. Escolha uma fonte de dados (dataset) que será a base para seu artigo (amostras brutas ou dataset público com características extraídas):
+	Minha escolha: Sgandurra 2016.
+2. Descreva o tipo e a fonte escolhida:
+	a. Tipo de dado: 
+		Resposta: Eventos de Execução em sandbox.
+	b. Variáveis:
+		Resposta: Há 30.967 diferentes features, distribuidas entre 7 diferentes conjuntos de comportamentos extraidos da analise das amostras em sandbox: API (API invocations), DROP (Extensions of the dropped files), REG (Registry key operations), FILES (File operations), FILES_EXT (Extension of the files involved in file operations), DIR (File directory operations), STR (Embedded strings)
+	c. Volume (por ex: quantidade a amostras):
+		Resposta: 1524 amostras totais
+	d. Quantos malwares e quantos goodwares:
+		Resposta: 582 malwares, 942 goodwares
+	e. Tipo de malwares:
+		Resposta: Ransomware
+	f. Se há subdivisão em famílias:
+		Resposta: Sim, 11 famílias.
+	g. Se já possui rótulos:
+		Resposta: Sim.
+	h. Fazer mais descrições relevantes.
+
+3. Justifique a escolha:
+	Resposta: Foi utilizado por estar como referencia no artigo que serviu como base para o presente estudo. É uma base bastante referenciada em outros trabalhos
+
+4. Caso escolha uma base pronta, faça um código de carregamento do dataset, e que mostre as estatísticas da base:
+	Resposta: resultado no arquivo 'resultado_estatisticas.txt'

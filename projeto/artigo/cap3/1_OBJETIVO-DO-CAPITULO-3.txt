@@ -1,0 +1,49 @@
+# Atividade 4 - Cap3 #
+### Treinamento do Modelo de Machinhe Learning ###
+
+#1. Escolha o tipo de algoritmo a ser pesquisado (supervisionado ou não):
+	Resposta: Supervisionado.
+
+
+#2. Desse tipo de algoritmo, escolha 4 modelos (classificadores):
+	Resposta:
+		modelo.1: BernoulliNB
+		modelo.2: Random Forest
+		modelo.3: Logistic Regression
+		modelo.4: KNeighborsClassifier
+
+
+#3. Pesquise quais os hiperparâmetros mais importantes para cada modelo:
+	Resposta:
+		hiperparametros-modelo1: BernoulliNB ('alpha', 'binarize', 'fit_prior')
+		hiperparametros-modelo2: Random Forest ('class_weight', 'criterion', 'max_depth', 'n_estimators')
+		hiperparametros-modelo3: Logistic Regression ('C', 'max_iter', 'penalty', 'solver')
+		hiperparametros-modelo4: KNeighborsClassifier ('metric', 'n_neighbors', 'weights')
+
+
+# 4. Faça o ajuste desses hiperparâmetros com validação cruzada para maximizar a métrica F1 (F-score / F-measure):
+	Resposta: 
+		melhores-hiperparametros-modelo1 BernoulliNB:
+		 	Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_bernoulli_grid.txt"
+		melhores-hiperparametros-modelo2 RandomForest:
+			Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_rforest_grid.txt"
+		melhores-hiperparametros-modelo3 Logistic Regression:
+			Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_lregression_grid.txt"
+		melhores-hiperparametros-modelo4 KNN:
+			Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_knn_grid.txt"
+
+
+# 5. Apresente a tabela comparativa com os melhores resultados de cada modelo (as métricas devem ser Acurácia, Precisão, Recall e F1):
+	Resposta: 
+		modelo1 BernoulliNB: 
+			Resultados iniciais contidos no arquivo "resultados_bernoulli_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_bernoulli_otim.txt"
+		modelo2 Random Forest: 
+			Resultados iniciais contidos no arquivo "resultados_rforest_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_rforest_otim.txt"
+		modelo3 Logistic Regression: 
+			Resultados iniciais contidos no arquivo "resultados_lregression_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_lregression_otim.txt"
+		modelo4 KNeighborsClassifier:
+			Resultados iniciais contidos no arquivo "resultados_knn_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_knn_otim.txt"

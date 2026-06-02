@@ -1,0 +1,54 @@
+\begin{thebibliography}{}
+
+\bibitem[{Cuckoo Foundation} 2014]{cuckoosandbox}
+{Cuckoo Foundation} (2014).
+\newblock Automated malware analysis - cuckoo sandbox.
+\newblock Acessado em: 31 de Maio de 2026.
+
+\bibitem[Hastie et~al. 2009]{hastie2009elements}
+Hastie, T., Tibshirani, R., and Friedman, J. (2009).
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}.
+\newblock Springer New York, 2nd edition.
+
+\bibitem[Hosmer et~al. 2013]{hosmer2013applied}
+Hosmer, D.~W., Lemeshow, S., and Sturdivant, R.~X. (2013).
+\newblock {\em Applied Logistic Regression}.
+\newblock John Wiley \& Sons.
+
+\bibitem[James et~al. 2013]{james2013introduction}
+James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013).
+\newblock {\em An Introduction to Statistical Learning: with Applications in
+  R}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Kuhn and Johnson 2013]{kuhn2013applied}
+Kuhn, M. and Johnson, K. (2013).
+\newblock {\em Applied Predictive Modeling}.
+\newblock Springer, New York.
+
+\bibitem[Lundberg and Lee 2017]{lundberg2017unified}
+Lundberg, S.~M. and Lee, S.-I. (2017).
+\newblock A unified approach to interpreting model predictions.
+\newblock {\em Advances in Neural Information Processing Systems}, 30.
+
+\bibitem[Moreira et~al. 2022]{caio2022}
+Moreira, C.~C., Sales, Jr., C. d. S.~d., and Moreira, D.~C. (2022).
+\newblock Understanding ransomware actions through behavioral feature analysis.
+\newblock {\em Journal of Communication and Information Systems},
+  37(1):61–76.
+
+\bibitem[Pedregosa et~al. 2011]{scikit-learn}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
+  O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
+  Passos, A., Cournapeau, D., Brucher, M., Perrot, M., and Duchesnay, E.
+  (2011).
+\newblock {\em Scikit-learn: Machine Learning in Python}.
+
+\bibitem[Sgandurra et~al. 2016]{sgandurra2016}
+Sgandurra, D., Mu{\~n}oz-Gonz{\'a}lez, L., Mohsen, R., and Lupu, E.~C. (2016).
+\newblock {Automated Dynamic Analysis of Ransomware: Benefits, Limitations and
+  use for Detection}.
+\newblock {\em arXiv preprint arXiv:1609.03020}.
+
+\end{thebibliography}

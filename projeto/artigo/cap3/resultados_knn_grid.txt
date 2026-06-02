@@ -1,0 +1,14 @@
+
+==================================================
+Iniciando ajuste de hiperparâmetros (GridSearchCV) para o Modelo...
+
+Otimização Concluída!
+Melhores parâmetros configurados: {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+
+Desempenho do melhor modelo encontrado:
+ - Acurácia: 95.58%
+ - Precisão: 93.99%
+ - Recall:   94.57%
+ - F1-Score: 94.24%
+==================================================
+

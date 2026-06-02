@@ -1,0 +1,8 @@
+
+===== Resultados: Random Forest Hiperparametros Otim =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  97.82% | +/- 0.20%
+Precisao     |  97.58% | +/- 0.36%
+Recall       |  96.70% | +/- 0.44%
+F1           |  97.12% | +/- 0.26%

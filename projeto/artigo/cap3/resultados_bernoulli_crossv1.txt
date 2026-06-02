@@ -1,0 +1,16 @@
+
+===== Resultados: Bernoulli Naive Bayes =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  81.57% | +/- 0.56%
+Precisao     |  70.92% | +/- 0.76%
+Recall       |  87.97% | +/- 0.77%
+F1           |  78.49% | +/- 0.60%
+
+===== Resultados: Bernoulli Naive Bayes =====
+Métrica      | Média    | +/- Intervalo de Confiança (95%)
+-------------------------------------------------------
+Acuracia     |  81.57% | +/- 0.56%
+Precisao     |  70.92% | +/- 0.76%
+Recall       |  87.97% | +/- 0.77%
+F1           |  78.49% | +/- 0.60%

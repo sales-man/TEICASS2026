@@ -1,0 +1,14 @@
+
+==================================================
+Iniciando ajuste de hiperparâmetros (GridSearchCV) para o Modelo...
+
+Otimização Concluída!
+Melhores parâmetros configurados: {'C': 1.0, 'max_iter': 1000, 'penalty': 'l1', 'solver': 'saga'}
+
+Desempenho do melhor modelo encontrado:
+ - Acurácia: 97.69%
+ - Precisão: 97.35%
+ - Recall:   96.60%
+ - F1-Score: 96.96%
+==================================================
+

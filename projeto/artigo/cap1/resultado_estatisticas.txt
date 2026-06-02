@@ -1,0 +1,19 @@
+Total de Amostras: 1524
+Ransomwares: 582 (38.19%)
+Goodwares: 942 (61.81%)
+Famílias Únicas Detectadas: 12
+Total de Atributos Computados (Features): 30967
+
+--- Amostras por Família de Ransomware ---
+- Goodware            : 942 amostras
+- CryptLocker         : 107 amostras
+- Locker              : 97 amostras
+- Reveton             : 90 amostras
+- Kovter              : 64 amostras
+- MATSNU              : 59 amostras
+- Critroni            : 50 amostras
+- CryptoWall          : 46 amostras
+- Trojan-Ransom       : 34 amostras
+- KOLLAH              : 25 amostras
+- TeslaCrypt          : 6 amostras
+- PGPCODER            : 4 amostras

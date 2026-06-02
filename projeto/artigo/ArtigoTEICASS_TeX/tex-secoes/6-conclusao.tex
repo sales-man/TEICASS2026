@@ -1,0 +1,10 @@
+
+\section{Conclusão} \label{sec:conclu}
+
+Este estudo realizou uma análise comparativa de quatro modelos de \textit{Machine Learning} para a detecção de ransomware, utilizando um dataset baseado em análise dinâmica com 1.524 amostras. Os resultados demonstram a viabilidade e a eficácia de utilizar o comportamento em execução para diferenciar códigos maliciosos de aplicações legítimas (\textit{goodwares}).
+
+A etapa de pré-processamento, especificamente a aplicação da técnica de \textit{Variance Threshold}, mostrou-se fundamental. A redução drástica da dimensionalidade de 30.967 para 485 atributos não apenas diminuiu o custo computacional, mas manteve a capacidade discriminante necessária para o treinamento dos modelos. Entre os algoritmos avaliados, a Regressão Logística e o Random Forest destacaram-se com desempenhos superiores, ambos alcançando um F1-score acima de 96\%.
+
+A escolha da Regressão Logística para a análise final foi justificada por seu equilíbrio entre alta acurácia e eficiência computacional. Além da detecção, este trabalho contribuiu para a explicabilidade do modelo ao utilizar coeficientes nativos e o framework SHAP. Essa análise permitiu identificar que chamadas de API específicas e operações de sistema, como as relacionadas à manipulação de strings e acesso a registros, são indicadores críticos de comportamento de ransomware no dataset estudado.
+
+Em suma, a metodologia adotada prova que a combinação de engenharia de atributos focada em comportamento e modelos de aprendizado supervisionado é uma abordagem robusta para enfrentar as ameaças cibernéticas modernas. Como trabalhos futuros, sugere-se a expansão do dataset para incluir famílias de ransomware mais recentes e a exploração de métodos de aprendizado profundo (\textit{Deep Learning}) para capturar sequências temporais de chamadas de sistema.

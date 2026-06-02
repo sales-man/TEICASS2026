@@ -1,0 +1,116 @@
+Escreva um dos componentes do artigo final, a seção: Materiais e Métodos
+(parte inicial: Coleta de Dados).
+
+1. Escolha um tipo (logs, tráfego de rede, arquivos executáveis, eventos de execução):
+	Minha escolha: Eventos de execução.
+2. Escolha uma fonte de dados (dataset) que será a base para seu artigo (amostras brutas ou dataset público com características extraídas):
+	Minha escolha: Sgandurra 2016.
+2. Descreva o tipo e a fonte escolhida:
+	a. Tipo de dado: 
+		Resposta: Eventos de Execução em sandbox.
+	b. Variáveis:
+		Resposta: Há 30.967 diferentes features, distribuidas entre 7 diferentes conjuntos de comportamentos extraidos da analise das amostras em sandbox: API (API invocations), DROP (Extensions of the dropped files), REG (Registry key operations), FILES (File operations), FILES_EXT (Extension of the files involved in file operations), DIR (File directory operations), STR (Embedded strings)
+	c. Volume (por ex: quantidade a amostras):
+		Resposta: 1524 amostras totais
+	d. Quantos malwares e quantos goodwares:
+		Resposta: 582 malwares, 942 goodwares
+	e. Tipo de malwares:
+		Resposta: Ransomware
+	f. Se há subdivisão em famílias:
+		Resposta: Sim, 11 famílias.
+	g. Se já possui rótulos:
+		Resposta: Sim.
+	h. Fazer mais descrições relevantes.
+
+3. Justifique a escolha:
+	Resposta: Foi utilizado por estar como referencia no artigo que serviu como base para o presente estudo. É uma base bastante referenciada em outros trabalhos
+
+4. Caso escolha uma base pronta, faça um código de carregamento do dataset, e que mostre as estatísticas da base:
+	Resposta: resultado no arquivo 'resultado_estatisticas.txt'
+
+
+# Atividade 3 - Cap2 #
+### Preprocessamento ###
+
+1. Utilizando o dataset escolhido, aplicar pelo menos as
+etapas de pré-processamento:
+	a. Limpeza de dados:
+		Resposta: Foi removido features que nao influenciavam tanto no modelo, com input de 97%, usando VT (VarianceThreshold) com p = 0.97 significa remover colunas onde o mesmo valor se repete em mais de 97% das amostras.
+	b. Normalização ou padronização de atributos numéricos:
+		Resposta: O dataset ja veio com todos os atributos modelados em 0 ou 1, o que foi feito foi atribuir o nome da feature a respectiva coluna do dataset, para facilitar a interpretaçao dos dados, pois as colunas do dataset nao possuiam cabeçalho, os nomes vinham em um arquivo separado.
+	c. A técnica escolhida para resolver e sua fundamentação teórica (citar referências):
+		Resposta: Kuhn and Johnson 2013
+	d. Escrever um texto para o capitulo do artigo, descrevendo as etapas de pré-processamento aplicadas.
+		VT (VarianceThreshold) com p = 97%
+
+
+# Atividade 4 - Cap3 #
+### Treinamento do Modelo de Machinhe Learning ###
+
+#1. Escolha o tipo de algoritmo a ser pesquisado (supervisionado ou não):
+	Resposta: Supervisionado.
+
+
+#2. Desse tipo de algoritmo, escolha 4 modelos (classificadores):
+	Resposta:
+		modelo.1: BernoulliNB
+		modelo.2: Random Forest
+		modelo.3: Logistic Regression
+		modelo.4: KNeighborsClassifier
+
+
+#3. Pesquise quais os hiperparâmetros mais importantes para cada modelo:
+	Resposta:
+		hiperparametros-modelo1: BernoulliNB ('alpha', 'binarize', 'fit_prior')
+		hiperparametros-modelo2: Random Forest ('class_weight', 'criterion', 'max_depth', 'n_estimators')
+		hiperparametros-modelo3: Logistic Regression ('C', 'max_iter', 'penalty', 'solver')
+		hiperparametros-modelo4: KNeighborsClassifier ('metric', 'n_neighbors', 'weights')
+
+
+# 4. Faça o ajuste desses hiperparâmetros com validação cruzada para maximizar a métrica F1 (F-score / F-measure):
+	Resposta: 
+		melhores-hiperparametros-modelo1 BernoulliNB:
+		 	Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_bernoulli_grid.txt"
+		melhores-hiperparametros-modelo2 RandomForest:
+			Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_rforest_grid.txt"
+		melhores-hiperparametros-modelo3 Logistic Regression:
+			Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_lregression_grid.txt"
+		melhores-hiperparametros-modelo4 KNN:
+			Hiperparametros ajustados com gridsearch contidos no arquivo "resultados_knn_grid.txt"
+
+
+# 5. Apresente a tabela comparativa com os melhores resultados de cada modelo (as métricas devem ser Acurácia, Precisão, Recall e F1):
+	Resposta: 
+		modelo1 BernoulliNB: 
+			Resultados iniciais contidos no arquivo "resultados_bernoulli_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_bernoulli_otim.txt"
+		modelo2 Random Forest: 
+			Resultados iniciais contidos no arquivo "resultados_rforest_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_rforest_otim.txt"
+		modelo3 Logistic Regression: 
+			Resultados iniciais contidos no arquivo "resultados_lregression_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_lregression_otim.txt"
+		modelo4 KNeighborsClassifier:
+			Resultados iniciais contidos no arquivo "resultados_knn_crossv1.txt"
+			Resultados otimizados contidos no arquivo "resultados_knn_otim.txt"
+
+
+# Atividade 5 - Cap4 #
+### Interpretaçao dos resultados ###
+
+#1. Treine o melhor modelo encontrado nas atividades passadas, com os melhores hiperparâmetros:
+	Resposta: 
+		Modelo: Logistic Regression (Escolhido por ter resultados proximos ao Random Forest, e apresentar um desempenho de processamento consideravelmente melhor)
+		Parametros: C=1.0, max_iter=1000, penalty='l1', solver='saga'
+
+
+#2. Caso o modelo tenha o cálculo nativo da importância, apresente a lista das 30 melhores features e seus valores.
+	Resposta: Existe o Coeficientes Nativos da Regressão Logística. A Regressão Logística é um modelo linear. Isso significa que ela calcula uma equação matemática onde cada variável de entrada (feature) recebe um peso, que é o coeficiente.
+
+
+#3. De qualquer forma, implemente o SHAP para gerar os gráficos de influência/importância abaixo:
+	a) Grafico do Beeswarm: shap_lregression_beeswarm.svg
+	b) Grafico do Decision: shap_lregression_bdecision.svg
+	
+
+#4. Faça um texto (e incorpore no artigo) descrevendo cada gráfico.
